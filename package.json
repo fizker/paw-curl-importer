@@ -4,7 +4,18 @@
   "description": "An importer for cURL statements",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "install": "npm run build && babel-node install.js",
     "test": "mocha"
+  },
+  "dependencies": {
+    "babel": "^5.1.10",
+    "babel-core": "^5.1.10",
+    "babel-loader": "^5.0.0",
+    "mkdirp": "^0.5.0",
+    "ncp": "^2.0.0",
+    "webpack": "^1.8.4",
+    "yargs": "^3.7.2"
   },
   "repository": {
     "type": "git",
